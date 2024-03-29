@@ -89,8 +89,8 @@ const DeleteButton = styled.button`
 
   @media (min-width: 1200px) {
     position: absolute;
-    margin-top: -150px;
-    margin-left: -500px;
+    top: 320px;
+    right: 470px;
     z-index: 3;
   }
 `;
@@ -108,8 +108,8 @@ const CircleOne = styled.div`
 
   @media (min-width: 1200px) {
     position: absolute;
-    margin-top: -350px;
-    margin-left: -550px;
+    top: 180px;
+    right: 470px;
     z-index: 3;
   }
 `;
@@ -127,8 +127,8 @@ const CircleTwo = styled.div`
 
   @media (min-width: 1200px) {
     position: absolute;
-    margin-top: -100px;
-    margin-left: 350px;
+    top: 300px;
+    right: 30px;
     z-index: 3;
   }
 `;
@@ -145,7 +145,7 @@ const CardSecond = styled.div`
   width: 100%;
   max-width: 400px;
   position: relative;
-  border: 1px solid;
+  border: 1px solid transparent;
   margin-left: -52px;
   height: 300px;
   margin-top: 52px;
@@ -173,7 +173,7 @@ const CardFirst = styled.div`
   width: 100%;
   max-width: 400px;
   height: 300px;
-  border: 1px solid;
+  border: 1px solid transparent;
 
   position: absolute;
   z-index: 1;

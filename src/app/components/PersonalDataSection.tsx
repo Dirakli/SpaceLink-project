@@ -144,7 +144,7 @@ const MiniWrapperOne = styled.button`
   width: 100%;
   height: 74px;
   border-radius: 20px;
-  border: 1px solid;
+  border: 1px solid transparent;
   display: flex;
   justify-content: flex-start;
   align-items: center;

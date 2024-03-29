@@ -4,13 +4,12 @@ import PricingSectionListItems from "../../shared/PricingSectionListItems";
 export default function PricingSection() {
   return (
     <Wrapper>
-      <Heading>Cloaking identities stand in for your personal data</Heading>
-      <Text>
-        Forget about spam, advertising mailings, hacking and attacking robots.
-        Keep your real mailbox clean and secure. Temp Mail provides temporary,
-        secure, anonymous, free, disposable email address.
+      <Heading>Pricing</Heading>
+      <Text style={{ marginTop: "16px" }}>
+        You can stay on the $56 plan until you have enough active user to
+        justify managing their data or you start settings things.
       </Text>
-      <BoxContainer>
+      <BoxContainer style={{ marginTop: "44px" }}>
         <Button>Billed yearly -20%</Button>
         Billed monthly
       </BoxContainer>
@@ -75,18 +74,18 @@ export default function PricingSection() {
               text="Access to all modules"
             />
             <PricingSectionListItems
-              src="/unchecked-mark.svg"
-              alt="unchecked mark"
+              src="/checked-mark.svg"
+              alt="checked mark"
               text="Notability"
             />
             <PricingSectionListItems
-              src="/unchecked-mark.svg"
-              alt="unchecked mark"
+              src="/checked-mark.svg"
+              alt="checked mark"
               text="  Optimize existing websites"
             />
             <PricingSectionListItems
-              src="/unchecked-mark.svg"
-              alt="unchecked mark"
+              src="/checked-mark.svg"
+              alt="checked mark"
               text="Search autocomplete"
             />
           </UnorderedLists>
@@ -115,18 +114,18 @@ export default function PricingSection() {
               text="Access to all modules"
             />
             <PricingSectionListItems
-              src="/unchecked-mark.svg"
-              alt="unchecked mark"
+              src="/checked-mark.svg"
+              alt="checked mark"
               text="Notability"
             />
             <PricingSectionListItems
-              src="/unchecked-mark.svg"
-              alt="unchecked mark"
+              src="/checked-mark.svg"
+              alt="checked mark"
               text="  Optimize existing websites"
             />
             <PricingSectionListItems
-              src="/unchecked-mark.svg"
-              alt="unchecked mark"
+              src="/checked-mark.svg"
+              alt="checked mark"
               text="Search autocomplete"
             />
           </UnorderedLists>
@@ -154,11 +153,18 @@ const RequestButton = styled.button`
   height: 48px;
   border-radius: 12px;
   margin-top: 36px;
-  border: 1px solid;
+  border: 1px solid transparent;
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
   color: #cad1e9;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
 `;
 
 const List = styled.li`
@@ -203,11 +209,18 @@ const Box = styled.div`
   width: 100%;
   max-width: 352px;
   height: 690px;
-  border: 1px solid;
+  border: 1px solid transparent;
   border-radius: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
 
   @media (min-width: 950px) {
     margin-left: 24px;
@@ -231,7 +244,7 @@ const Button = styled.button`
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  border: 1px solid;
+  border: 1px solid transparent;
   border-radius: 12px;
   width: 100%;
   margin-left: 5px;
@@ -240,14 +253,21 @@ const Button = styled.button`
   line-height: 20px;
   font-weight: 500;
   color: #cad1e9;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
 `;
 
 const BoxContainer = styled.div`
   width: 100%;
   max-width: 358px;
   height: 56px;
-  border: 1px solid;
-  margin-top: 44px;
+  border: 1px solid transparent;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   border-radius: 16px;
@@ -257,6 +277,13 @@ const BoxContainer = styled.div`
   line-height: 20px;
   font-weight: 400;
   color: #cad1e9;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
 `;
 
 const Wrapper = styled.div`
@@ -267,15 +294,19 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.p`
-  margin-top: 16px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
   font-size: 16px;
   line-height: 24px;
+  margin: 0 auto;
   font-weight: 400;
   color: #afb3ca;
 `;
 
 const Heading = styled.h1`
   font-size: 36px;
+  margin: 0 auto;
   line-height: 62px;
   font-weight: 500;
   color: #cad1e9;

@@ -1,10 +1,10 @@
 "use client";
 import styled from "styled-components";
 import Image from "next/image";
-
+import rainbowimage from "/public/rainbow.svg";
 export default function PrivacySection() {
   return (
-    <Wrapper>
+    <Wrapper imageimg={rainbowimage}>
       <PrivacyWrapper>
         <Heading>
           <Span>Protect your</Span> privacy online
@@ -92,7 +92,7 @@ const MiniWrapperOne = styled.button`
   max-width: 400px;
   height: 74px;
   border-radius: 20px;
-  border: 1px solid transparent; /* Ensure border is present but transparent */
+  border: 1px solid transparent;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -112,7 +112,7 @@ const MiniWrapperOne = styled.button`
     max-width: 242px;
     position: absolute;
     margin-top: 30px;
-    margin-left: -420px;
+    right: 350px;
   }
 `;
 
@@ -121,13 +121,21 @@ const MiniWrapperTwo = styled.button`
   max-width: 400px;
   height: 74px;
   border-radius: 20px;
-  border: 1px solid;
+  border: 1px solid transparent;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 12px;
   margin-top: 24px;
-  background: transparent;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
+
+  border-radius: 20px;
 
   @media (min-width: 1150px) {
     max-width: 242px;
@@ -141,6 +149,7 @@ const EmailUserWrapper = styled.div<any>`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   width: 100%;
   max-width: 523px;
   padding: 20px;
@@ -191,12 +200,20 @@ const ButtonTwo = styled.button`
   font-weight: 600;
   color: #cad1e9;
   border-radius: 16px;
-  border: 1px solid #303030;
+  border: 1px solid transparent;
   margin-top: 16px;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
 
   @media (min-width: 950px) {
     max-width: 175px;
     margin-top: 0;
+    margin-left: 16px;
   }
 `;
 
@@ -264,8 +281,8 @@ const Span = styled.span`
     #f088d2 55.08%,
     #ffad8b 109.04%
   );
-  -webkit-background-clip: text; /* For Safari */
-  -webkit-text-fill-color: transparent; /* For Safari */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 `;
@@ -291,7 +308,7 @@ const PrivacyWrapper = styled.div`
   max-width: 523px;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<any>`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -300,6 +317,7 @@ const Wrapper = styled.div`
   border: 1px solid #1f2035;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: url(${(props) => props.imageimg});
 
   @media (min-width: 950px) {
     flex-direction: row;

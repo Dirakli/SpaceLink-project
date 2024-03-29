@@ -5,11 +5,21 @@ import Image from "next/image";
 export default function WhyUs() {
   return (
     <Wrapper>
-      <Heading>Why choose us</Heading>
-      <Text>
-        We are the only service that provides all 3 services as a packaged
-        service
-      </Text>
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "600px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+        }}
+      >
+        <Heading>Why choose us</Heading>
+        <Text>
+          We are the only service that provides all 3 services as a packaged
+          service
+        </Text>
+      </div>
       <Container>
         <Box>
           <HeadingSecond>Personal information removal</HeadingSecond>
@@ -58,6 +68,7 @@ export default function WhyUs() {
               width: "100%",
               maxWidth: "520px",
               marginTop: "24px",
+              position: "relative",
             }}
           >
             <ImageDiv>
@@ -159,9 +170,16 @@ const DetailWrapper = styled.div`
   width: 100%;
   padding: 20px;
   flex-direction: column;
-  border: 1px solid;
+  border: 1px solid transparent;
   border-radius: 20px;
   max-width: 600px;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
 
   @media (min-width: 950px) {
     flex-direction: row;
@@ -174,8 +192,8 @@ const DetailWrapper = styled.div`
 const ImageDiv = styled.div`
   @media (min-width: 1150px) {
     position: absolute;
-    margin-top: -295px;
-    margin-left: 28px;
+    bottom: 250px;
+    left: 30px;
   }
 `;
 
@@ -199,13 +217,19 @@ const SmallWrapper = styled.div`
 const CardWrapper = styled.div`
   display: flex;
   padding: 28px;
-  border: 1px solid;
+  border: 1px solid transparent;
   margin-top: 42px;
-  height: 195px;
   border-radius: 20px;
   justity-content: flex-start;
   width: 100%;
   max-width: 484px;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
 
   @media (min-width: 950px) {
     margin-top: 0px;
@@ -228,8 +252,8 @@ const ReplayButton = styled.button`
 
   @media (min-width: 1150px) {
     position: absolute;
-    margin-top: -80px;
-    margin-left: 28px;
+    bottom: 50px;
+    left: 30px;
     z-index: 7;
   }
 `;
@@ -246,13 +270,20 @@ const CardSecond = styled.div`
   width: 100%;
   max-width: 520px;
   position: relative;
-  border: 1px solid;
+  border: 1px solid transparent;
   height: 272px;
   border-radius: 24px;
   background: #4545f7;
   padding-top: 31px;
   padding-left: 33px;
   padding-right: 20px;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
 
   @media (min-width: 950px) {
     padding-bottom: 70px;
@@ -283,16 +314,26 @@ const Box = styled.div`
   display: flex;
   min-height: 504px;
   margin-top: 20px;
+  height: 560px;
   padding: 20px;
   border-radius: 20px;
-  border: 1px solid;
+  border: 1px solid transparent;
   flex-direction: column;
+  justify-content: space-around;
+
+  background: linear-gradient(
+    137.34deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
+  border-image-slice: 1;
 `;
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 20px;
   align-items: center;
   justify-content: space-around;
   @media (min-width: 950px) {
@@ -312,17 +353,19 @@ const Text = styled.p`
 const Heading = styled.h1`
   font-size: 36px;
   line-height: 62px;
+  text-align: start;
   padding-left: 20px;
   font-weight: 500;
   color: #cad1e9;
 
   @media (min-width: 950px) {
     font-size: 56px;
+    margin: 0 auto;
   }
 `;
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 `;

@@ -6,7 +6,7 @@ export default function SupportSection() {
   return (
     <Wrapper>
       <TextWrapper>
-        <Heading>Cloaking identities stand in for your personal data</Heading>
+        <Heading>Dedicated Support</Heading>
         <Text>
           Forget about spam, advertising mailings, hacking and attacking robots.
           Keep your real mailbox clean and secure. Temp Mail provides temporary,
@@ -74,8 +74,8 @@ const CircleOne = styled.div`
   display: flex;
   @media (min-width: 950px) {
     position: absolute;
-    margin-top: -260px;
-    margin-left: 10px;
+    bottom: 210px;
+    left: 10px;
     z-index: 5;
   }
 `;
@@ -84,8 +84,8 @@ const CircleTwo = styled.div`
   display: flex;
   @media (min-width: 950px) {
     position: absolute;
-    margin-top: -90px;
-    margin-left: 10px;
+    bottom: 40px;
+    left: 10px;
     z-index: 5;
   }
 `;
@@ -105,8 +105,8 @@ const ReplayButton = styled.button`
   border-radius: 14px;
   @media (min-width: 950px) {
     position: absolute;
-    margin-top: -90px;
-    margin-left: 100px;
+    bottom: 40px;
+    left: 100px;
     z-index: 3;
   }
 `;
@@ -134,7 +134,7 @@ const CardSecond = styled.div`
   width: 100%;
   max-width: 400px;
   position: relative;
-  border: 1px solid;
+  border: 1px solid transparent;
   margin-left: -52px;
   height: 254px;
   margin-top: 52px;
@@ -144,6 +144,15 @@ const CardSecond = styled.div`
   padding-top: 31px;
   padding-left: 33px;
   padding-right: 20px;
+
+  background: linear-gradient(
+    100.42deg,
+    rgba(0, 132, 255, 0.16) 7%,
+    rgba(255, 171, 144, 0.16) 48.55%,
+    rgba(253, 138, 200, 0.16) 101.86%
+  );
+
+  border-image-slice: 1;
 
   @media (min-width: 950px) {
     max-width: 489px;
@@ -155,11 +164,20 @@ const CardFirst = styled.div`
   width: 100%;
   max-width: 400px;
   height: 254px;
-  border: 1px solid;
+  border: 1px solid transparent;
   position: absolute;
   z-index: 1;
   border-radius: 24px;
   background: #4545f7;
+
+  background: linear-gradient(
+    100.42deg,
+    rgba(0, 132, 255, 0.16) 7%,
+    rgba(255, 171, 144, 0.16) 48.55%,
+    rgba(253, 138, 200, 0.16) 101.86%
+  );
+
+  border-image-slice: 1;
 
   @media (min-width: 950px) {
     max-width: 489px;
