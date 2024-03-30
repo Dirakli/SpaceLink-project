@@ -15,26 +15,50 @@ export default function Footer() {
           <Title>identityHub</Title>
         </TitleWrapper>
         <UnorderedList>
-          <li style={{ fontWeight: "500", fontSize: "18px" }}>
+          <li
+            style={{ fontWeight: "500", fontSize: "18px", cursor: "pointer" }}
+          >
             It’s free so why not
           </li>
-          <li style={{ marginTop: "24px", opacity: "0.7" }}>Pricing</li>
-          <li style={{ opacity: "0.7", marginTop: "12px" }}>Features</li>
-          <li style={{ opacity: "0.7", marginTop: "12px" }}>FAQ</li>
+          <li style={{ marginTop: "24px", opacity: "0.7", cursor: "pointer" }}>
+            Pricing
+          </li>
+          <li style={{ opacity: "0.7", marginTop: "12px", cursor: "pointer" }}>
+            Features
+          </li>
+          <li style={{ opacity: "0.7", marginTop: "12px", cursor: "pointer" }}>
+            FAQ
+          </li>
         </UnorderedList>
         <UnorderedList>
-          <li style={{ fontWeight: "500", fontSize: "18px" }}>Company</li>
-          <li style={{ marginTop: "24px", opacity: "0.7" }}>Our company</li>
-          <li style={{ opacity: "0.7", marginTop: "12px" }}>Security</li>
-          <li style={{ opacity: "0.7", marginTop: "12px" }}>Blog</li>
+          <li
+            style={{ fontWeight: "500", fontSize: "18px", cursor: "pointer" }}
+          >
+            Company
+          </li>
+          <li style={{ marginTop: "24px", opacity: "0.7", cursor: "pointer" }}>
+            Our company
+          </li>
+          <li style={{ opacity: "0.7", marginTop: "12px", cursor: "pointer" }}>
+            Security
+          </li>
+          <li style={{ opacity: "0.7", marginTop: "12px", cursor: "pointer" }}>
+            Blog
+          </li>
         </UnorderedList>
         <UnorderedList>
-          <li style={{ fontWeight: "500", fontSize: "18px" }}>Legal</li>
-          <li style={{ marginTop: "24px", opacity: "0.7" }}>Privacy policy</li>
-          <li style={{ opacity: "0.7", marginTop: "12px" }}>
+          <li
+            style={{ fontWeight: "500", fontSize: "18px", cursor: "pointer" }}
+          >
+            Legal
+          </li>
+          <li style={{ marginTop: "24px", opacity: "0.7", cursor: "pointer" }}>
+            Privacy policy
+          </li>
+          <li style={{ opacity: "0.7", marginTop: "12px", cursor: "pointer" }}>
             Terms of service
           </li>
-          <li style={{ opacity: "0.7", marginTop: "12px" }}>
+          <li style={{ opacity: "0.7", marginTop: "12px", cursor: "pointer" }}>
             Prohibited use policy
           </li>
         </UnorderedList>
@@ -58,7 +82,7 @@ export default function Footer() {
           ></Image>
           <Span>Youtube</Span>
         </MiniWrapperOne>
-        <MiniWrapperOne style={{ width: "50px" }}>
+        <MiniWrapperOne>
           <Image
             src="/socialmedia/x.svg"
             alt="x logo"
@@ -83,6 +107,7 @@ export default function Footer() {
 
 const MiniWrapperOne = styled.div`
   display: flex;
+  cursor: pointer;
   width: 165px;
   justify-content: space-between;
   align-items: center;
