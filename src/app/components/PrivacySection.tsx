@@ -1,10 +1,10 @@
 "use client";
 import styled from "styled-components";
 import Image from "next/image";
-import rainbowimage from "/public/rainbow.svg";
 export default function PrivacySection() {
   return (
-    <Wrapper imageimg={rainbowimage}>
+    <Wrapper>
+      <Img src="/rainbow.svg" alt="rainbow image" />
       <PrivacyWrapper>
         <Heading>
           <Span>Protect your</Span> privacy online
@@ -75,6 +75,17 @@ export default function PrivacySection() {
     </Wrapper>
   );
 }
+
+const Img = styled.img`
+  height: 600px;
+  top: 90px;
+  position: absolute;
+  display: none;
+
+  @media (min-width: 950px) {
+    display: block;
+  }
+`;
 
 const Box = styled.div`
   display: flex;
@@ -317,8 +328,6 @@ const Wrapper = styled.div<any>`
   border: 1px solid #1f2035;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(${(props) => props.imageimg});
-
   @media (min-width: 950px) {
     flex-direction: row;
     justify-content: space-around;
