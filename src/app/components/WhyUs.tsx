@@ -192,7 +192,7 @@ const DetailWrapper = styled.div`
 const ImageDiv = styled.div`
   @media (min-width: 1150px) {
     position: absolute;
-    bottom: 250px;
+    bottom: 260px;
     left: 30px;
   }
 `;
@@ -252,7 +252,7 @@ const ReplayButton = styled.button`
 
   @media (min-width: 1150px) {
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
     left: 30px;
     z-index: 7;
   }

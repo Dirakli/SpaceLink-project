@@ -53,9 +53,9 @@ export default function PricingSection() {
           <RequestButton>Request access</RequestButton>
           <Span>It’s free so why not</Span>
         </Box>
-        <Box style={{ marginTop: "24px" }}>
+        <Box style={{ height: "690px" }}>
           <BoxHeading>Single</BoxHeading>
-          <Price>$56</Price>
+          <ColoredPrice>$56</ColoredPrice>
           <PerMonth>Per month</PerMonth>
           <UnorderedLists>
             <PricingSectionListItems
@@ -93,7 +93,7 @@ export default function PricingSection() {
           <RequestButton>Request access</RequestButton>
           <Span>Save $23per year</Span>
         </Box>
-        <Box style={{ marginTop: "24px" }}>
+        <Box>
           <BoxHeading>Family</BoxHeading>
           <Price>$124</Price>
           <PerMonth>Per month</PerMonth>
@@ -197,6 +197,25 @@ const Price = styled.span`
   color: #cad1e9;
 `;
 
+const ColoredPrice = styled.span`
+  font-size: 56px;
+  margin-top: 20px;
+  line-height: 67px;
+  font-weight: 500;
+  color: #cad1e9;
+
+  background: linear-gradient(
+    90.63deg,
+    #b67efd 0.9%,
+    #f088d2 55.08%,
+    #ffad8b 109.04%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+`;
+
 const BoxHeading = styled.span`
   font-size: 20px;
   margin-top: 52px;
@@ -208,7 +227,7 @@ const BoxHeading = styled.span`
 const Box = styled.div`
   width: 100%;
   max-width: 352px;
-  height: 690px;
+  height: 634px;
   border: 1px solid transparent;
   border-radius: 32px;
   display: flex;
@@ -231,6 +250,7 @@ const SmallerWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   margin-top: 62px;
 
   @media (min-width: 950px) {
